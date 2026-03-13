@@ -1,0 +1,219 @@
+.prices {
+    position: relative
+}
+
+.prices .pricesBlock__title-text {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 35px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.prices .container {
+    padding-top: 21px;
+    padding-bottom: 45px;
+    -webkit-box-align: inherit;
+    -webkit-align-items: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit
+}
+
+.prices .container,.prices .container .card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative
+}
+
+.prices .container .card {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: baseline;
+    -ms-flex-line-pack: baseline;
+    align-content: baseline;
+    text-align: center;
+    max-width: 350px;
+    min-height: 558px;
+    width: 100%;
+    border: 2px solid #dbdbdb;
+    padding-top: 105px
+}
+
+.prices .container .card .card-head {
+    text-align: center;
+    padding: 21px 0 19px;
+    width: calc(100% + 4px);
+    position: absolute;
+    top: -2px;
+    left: -2px
+}
+.card.optimal .card-head h3, .card.optimal .card-head h4 {
+    color: #fff;
+}
+.prices .container .card .card-head .card-title {
+    font-size: 30px;
+    line-height: 42px
+}
+
+.prices .container .card .card-body {
+    padding: 27px 15px 100px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    z-index: 10
+}
+
+.prices .container .card .card-body h4 {
+    margin-bottom: 20px
+}
+
+.prices .container .card .card-body ul {
+    margin-left: 16px;
+    list-style: disc
+}
+
+.prices .container .card .card-body ul li {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 220%;
+    color: #000
+}
+
+.prices .container .card .btn {
+    position: absolute;
+    z-index: 10;
+    bottom: 17px;
+    padding: 11px 50px 13px;
+    white-space: nowrap;
+    border: none
+}
+
+.prices .container .card .btn-compare {
+    position: absolute;
+    z-index: 10;
+    bottom: 65px;
+    padding: 11px 10px 13px;
+    white-space: nowrap;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    z-index: 30
+}
+
+.prices .card-tooltip {
+    position: absolute;
+    left: calc(100% + 15px);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s
+}
+.quote_class {
+    color: #fff !important;
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #008eff;
+}
+.prices .card-tooltip:before {
+    content: ""
+}
+.blue-btn {
+    background: #0C2957;
+    color: #fff;
+}
+.blue-btn:hover {
+    color: #fff;
+}
+.prices .card-tooltip .card.optimal {
+    margin: 0
+}
+
+.prices .card-tooltip .card-title {
+    font-weight: 700
+}
+
+.prices .card-tooltip.Visible {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 9999999
+}
+
+.prices.prices-home .card {
+    min-height: 450px
+}
+
+.prices.prices-home .card.optimal .card-body {
+    padding-bottom: 180px
+}
+.card.optimal {
+    padding-top: 78px !important;
+    border: 2px solid #0C2957 !important;
+}
+.card {
+    background: #fff;
+}
+.card.optimal .card-head {
+    background: #0C2957;
+}
+.prices .container, .prices .container .card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+	.prices .pricesBlock__title-text {
+		max-width: 720px;
+		padding-top: 50px;
+	}
+}
+@media (min-width: 992px){
+	.card.optimal {
+		margin-left: 15px;
+		margin-right: 15px;
+		padding-top: 98px !important;
+		max-width: 380px !important;
+	}
+	.card.optimal .card-head {
+		padding: 24px 0 32px !important;
+	}
+	.card.optimal .btn {
+		bottom: 40px !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.prices .container {
+		padding-bottom: 95px;
+	}
+	
+}
+@media (min-width: 481px){
+	.prices .container .card .btn {
+		left: 26px;
+	}
+}
